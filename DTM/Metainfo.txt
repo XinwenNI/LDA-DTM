@@ -1,0 +1,14 @@
+
+Name of Quantlet: DTM application 
+
+Published in: LDA-DTM
+
+Description: DTM application with Cryptocurrency Policy Regulation News
+
+Keywords: LDA, DTM, Topic Models, Cryptocurrency, Policy Regulation 
+
+Author: Xinwen Ni
+
+Submitted:  30 Jan 2019
+
+
