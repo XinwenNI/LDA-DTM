@@ -1,0 +1,12 @@
+
+Name of Quantlet: LDA_NASDAQ   
+
+Published in: LDA-DTM
+
+Description: 'LDA application with NASDAQ news, the word cloud' 
+
+Keywords: LDA, NASDAQ news, topic modelling, 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
