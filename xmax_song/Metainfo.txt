@@ -1,5 +1,5 @@
 
-Name of Quantlet: LDA application of Christmas Song  
+Name of Quantlet: LDA_Christmas_Songs  
 
 Published in: LDA-DTM
 
