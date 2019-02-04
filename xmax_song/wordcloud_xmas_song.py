@@ -10,14 +10,9 @@ import matplotlib.pyplot as plt
 import re
 from nltk.corpus import stopwords
 import os
-import pysentiment as ps
-import nltk
-from nltk.stem import WordNetLemmatizer 
-from nltk.stem.porter import PorterStemmer
-from nltk.corpus import stopwords
+
 from os import path
 from PIL import Image
-import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 import numpy as np
 
