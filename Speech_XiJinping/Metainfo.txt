@@ -1,5 +1,5 @@
 
-Name of Quantlet: word cloud of Xi Jinping's speech  
+Name of Quantlet:LDA_speech_xi  
 
 Published in: LDA-DTM
 
