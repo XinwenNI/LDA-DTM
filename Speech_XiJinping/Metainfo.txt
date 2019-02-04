@@ -1,5 +1,5 @@
 
-Name of Quantlet:LDA_speech_xi  
+Name of Quantlet: LDA_speech_xi  
 
 Published in: LDA-DTM
 
