@@ -1,0 +1,14 @@
+
+Name of Quantlet: word cloud of Xi Jinping's speech  
+
+Published in: LDA-DTM
+
+Description:  word cloud of Xi Jinping's speech
+
+Keywords: LDA, word cloud, Xi Jinping, China 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+
