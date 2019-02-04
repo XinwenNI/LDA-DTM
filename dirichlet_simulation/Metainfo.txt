@@ -1,0 +1,14 @@
+
+Name of Quantlet: Dirichlet Simulation 
+
+Published in: LDA-DTM
+
+Description: Simulated article using different Dirichlet hyperparameters 
+
+Keywords: LDA, Dirichlet, Simulation, 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+
