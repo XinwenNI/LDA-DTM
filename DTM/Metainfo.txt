@@ -1,5 +1,5 @@
 
-Name of Quantlet: DTM application 
+Name of Quantlet: DTM_Policy_Risk 
 
 Published in: LDA-DTM
 
