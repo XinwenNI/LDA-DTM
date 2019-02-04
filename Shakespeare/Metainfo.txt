@@ -1,0 +1,14 @@
+
+Name of Quantlet: LDA application with Shakespeare   
+
+Published in: LDA-DTM
+
+Description: LDA application with Shakespeare works 
+
+Keywords: LDA, Shakespeare, topic modeling 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+

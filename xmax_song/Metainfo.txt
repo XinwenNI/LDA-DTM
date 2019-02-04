@@ -1,0 +1,14 @@
+
+Name of Quantlet: LDA application of Christmas Song  
+
+Published in: LDA-DTM
+
+Description: Compare two Christmas Songs with LDA
+
+Keywords: LDA, word cloud, topic modelling, Christmas Song
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+
