@@ -5,6 +5,8 @@ Created on Sun May  6 18:25:01 2018
 
 @author: verani
 """
+!pip install wordcloud
+!pip install Pillow
 
 from os import path
 import os
