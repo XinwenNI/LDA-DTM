@@ -38,3 +38,10 @@ wc.generate(text[0])
 
 # store to file
 wc.to_file(path.join(root_path, "shakepeare.png"))
+
+# to show the picture 
+plt.imshow(wc, interpolation='bilinear')
+plt.axis("off")# 关掉图像的坐标
+plt.show()
+
+

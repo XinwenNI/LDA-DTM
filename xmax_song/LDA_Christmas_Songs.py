@@ -5,12 +5,20 @@ Created on Sun May  6 19:10:18 2018
 
 @author: verani
 """
-# wordcloud 
+############################################################# 
+# Part I: wordcloud 
+############################################################# 
+#install the module: wordcloud, nltk, PIL, numpy
+!pip install wordcloud
+!pip install nltk
+!pip install Pillow
+!pip install numpy
+
+
 import matplotlib.pyplot as plt
 import re
 from nltk.corpus import stopwords
 import os
-
 from os import path
 from PIL import Image
 from wordcloud import WordCloud, STOPWORDS
@@ -45,6 +53,7 @@ with open(path.join(root_path, 'Output_total.txt'), 'r', encoding='utf-8', error
 # Mask
 xmas_tree_pic = np.array(Image.open(path.join(root_path, "xmas_tree2.png")))
 
+
 # Optional additional stopwords
 stopwords = set(STOPWORDS)
 stopwords.add("song")
@@ -54,6 +63,7 @@ stopwords.add("song")
 wc = WordCloud(max_words=100, mask=xmas_tree_pic,
                stopwords=stopwords, mode='RGBA', background_color=None)
 
+
 # Pass Text
 wc.generate(text[0])
 
@@ -62,10 +72,19 @@ wc.to_file(path.join(root_path, "wordcloud_xmas_tree.png"))
 
 
 
+plt.imshow(wc, interpolation='bilinear')
+plt.axis("off")
+plt.show()
 
 
-# LDA
 
+
+############################################################# 
+#LDA
+############################################################# 
+
+!pip install gensim
+!pip install pandas
 
 import os
 import re
@@ -75,17 +94,19 @@ from os import path
 from nltk.stem import WordNetLemmatizer 
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+from nltk.corpus import stopwords 
+from nltk.stem.wordnet import WordNetLemmatizer
+import string
+import gensim
+from gensim import corpora
+import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
 
 d = os.getcwd()
 
-
-
-
 text_pre = open(path.join(d, 'XMAS SONG.txt'), encoding = "utf8").read()
-#text= text_pre.replace("\n"," ")
-#text_file = open("XMAS SONG.txt", "w")
-#text_file.write(str(text))
-#text_file.close()
+
 
 doc_l = str.split(text_pre, sep = 'SONG')
 #doc_l.pop()[0]
@@ -106,9 +127,7 @@ for l in doc_l:
 
 doc_complete = doc_out
 
-from nltk.corpus import stopwords 
-from nltk.stem.wordnet import WordNetLemmatizer
-import string
+
 
 stop = set(stopwords.words('english'))
 stop.add('SONG')
@@ -128,8 +147,7 @@ doc_clean = [clean(doc).split() for doc in doc_complete]
 
 
 # Importing Gensim
-import gensim
-from gensim import corpora
+
 
 # Creating the term dictionary of our courpus, where every unique term is assigned an index.
 dictionary = corpora.Dictionary(doc_clean)
@@ -151,8 +169,6 @@ topicWordProbMat=ldamodel.print_topics(K)
 
 
 
-import pandas as pd
-import numpy as np
 
 columns = ['1','2']
 df = pd.DataFrame(columns = columns)
@@ -195,7 +211,7 @@ print (df)
 print (zz)
 
 
-import matplotlib.pyplot as plt
+
 
 zz=np.resize(zz,(len(DC.keys()),zz.shape[1]))
 
