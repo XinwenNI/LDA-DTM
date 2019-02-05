@@ -5,6 +5,11 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
+import os
+import chnSegment
+import plotWordcloud
+
+
 
 def generate_wordcloud(text):
     '''
@@ -37,3 +42,17 @@ def generate_wordcloud(text):
     plt.axis("off")# 关掉图像的坐标
     plt.show()
 
+
+
+
+
+
+    # 读取文件
+d = os.getcwd()
+text = open(path.join(d, 'doc//十九大报告全文.txt')).read()
+
+# 若是中文文本，则先进行分词操作
+text=chnSegment.word_segment(text)
+    
+    # 生成词云
+plotWordcloud.generate_wordcloud(text)
