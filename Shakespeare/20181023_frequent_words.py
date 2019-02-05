@@ -92,7 +92,7 @@ def SequenceSelection(dictionary, length, startindex = 0): # length is length of
 
         return dictshow;
     
-dictshow = SequenceSelection(dictionary = dict2, length = 100, startindex = 0)
+dictshow = SequenceSelection(dictionary = dict2, length = 90, startindex = 0)
 
 #these 34 words are given as an example in the book from L.Borke & W. Haerdle
 doc_34words="art   away  blood  day  dead  dear  death  eyes  exit  fair  father  fear god good great heart heaven ill king leave lady like life love lord make man men must night sweet think time well"
