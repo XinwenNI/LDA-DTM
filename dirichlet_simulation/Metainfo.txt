@@ -3,9 +3,9 @@ Name of Quantlet: LDA_generate_document_by_setting_hyperparameters
 
 Published in: LDA-DTM
 
-Description: Simulated article using different Dirichlet hyperparameters 
+Description: "Simulated article using different Dirichlet hyperparameters to show the mechanism of LDA" 
 
-Keywords: LDA, Dirichlet, Simulation, 
+Keywords: LDA, Dirichlet, Simulated Articles, Hyperparameters, Word distribution 
 
 Author: Xinwen Ni
 

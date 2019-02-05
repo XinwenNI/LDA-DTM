@@ -3,9 +3,9 @@ Name of Quantlet: LDA_NASDAQ
 
 Published in: LDA-DTM
 
-Description: 'LDA application with NASDAQ news, the word cloud' 
+Description: 'LDA application with NASDAQ news, the word cloud, and word frequency' 
 
-Keywords: LDA, NASDAQ news, topic modelling, 
+Keywords: LDA, NASDAQ news, topic modelling, word cloud, word frequency
 
 Author: Xinwen Ni
 
