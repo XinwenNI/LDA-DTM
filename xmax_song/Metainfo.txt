@@ -3,9 +3,9 @@ Name of Quantlet: LDA_Christmas_Songs
 
 Published in: LDA-DTM
 
-Description: Compare two Christmas Songs with LDA
+Description: Compare two Christmas Songs with their frequency words and their topics (LDA)
 
-Keywords: LDA, word cloud, topic modelling, Christmas Song
+Keywords: LDA, word cloud, topic modelling, Christmas Song, word frequency
 
 Author: Xinwen Ni
 
