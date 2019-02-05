@@ -5,7 +5,11 @@ Created on Thu Oct 25 09:08:48 2018
 The heatmap of Shakespeare analysis is missing from the Quantlet. This code is try to generate that. 
 @author: verani
 """
-#import matplotlib.pyplot as plt
+#please install the module:
+!pip install matplotlib
+!pip install nltk
+!pip install pandas
+
 import re
 from nltk.corpus import stopwords
 import os

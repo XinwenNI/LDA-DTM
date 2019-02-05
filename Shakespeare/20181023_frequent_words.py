@@ -6,14 +6,17 @@ Created on Wed Oct 24 21:15:06 2018
 @author: verani
 """
 
-# Further Analysis
+# please install the module: 
+!pip install matplotlib
+!pip install nltk
+
 import matplotlib.pyplot as plt
 import re
 from nltk.corpus import stopwords
 import os
-
 from os import path
-
+import nltk
+nltk.download('stopwords')
 
 d = os.getcwd()
 
@@ -57,8 +60,7 @@ for word in words:
     
 # Filter Stopwords
 keys = list(dict1)
-import nltk
-nltk.download('stopwords')
+
 filtered_words = [word for word in keys if word not in stopwords.words('english')]
 dict2 = dict((k, dict1[k]) for k in filtered_words if k in filtered_words)
 
