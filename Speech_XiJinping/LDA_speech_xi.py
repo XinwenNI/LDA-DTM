@@ -1,4 +1,6 @@
 # coding:utf-8
+!pip install wordcloud
+!pip install jieba
 
 from os import path
 from PIL import Image
