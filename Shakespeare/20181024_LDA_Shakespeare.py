@@ -6,6 +6,11 @@ Created on Wed Oct 24 22:15:37 2018
 @author: verani
 """
 
+#please install the module:
+!pip install matplotlib
+!pip install nltk
+!pip install gensim
+
 
 import os
 import re
@@ -15,6 +20,10 @@ from os import path
 from nltk.stem import WordNetLemmatizer 
 from nltk.stem.porter import PorterStemmer
 from nltk.corpus import stopwords
+import nltk
+# Importing Gensim
+import gensim
+from gensim import corpora
 
 d = os.getcwd()
 
@@ -50,7 +59,7 @@ stop = set(stopwords.words('english'))
 
 exclude = set(string.punctuation) 
 lemma = WordNetLemmatizer()
-import nltk
+
 nltk.download('wordnet')
 def clean(doc):
     stop_free = " ".join([i for i in doc.lower().split() if i not in stop])
@@ -62,9 +71,7 @@ def clean(doc):
 doc_clean = [clean(doc).split() for doc in doc_complete]    
 
 
-# Importing Gensim
-import gensim
-from gensim import corpora
+
 
 # Creating the term dictionary of our courpus, where every unique term is assigned an index.
 dictionary = corpora.Dictionary(doc_clean)
