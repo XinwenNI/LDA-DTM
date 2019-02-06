@@ -13,7 +13,8 @@ import os
 import chnSegment
 import plotWordcloud
 
-
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/Speech_XiJinping") 
 
 def generate_wordcloud(text):
     '''
@@ -42,8 +43,8 @@ def generate_wordcloud(text):
 
     # show the pic
     plt.imshow(wc, interpolation='bilinear')
-    # interpolation='bilinear' 表示插值方法为双线性插值
-    plt.axis("off")# 关掉图像的坐标
+    # interpolation='bilinear' 
+    plt.axis("off")# 
     plt.show()
 
 

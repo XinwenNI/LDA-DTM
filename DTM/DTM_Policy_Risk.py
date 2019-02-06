@@ -5,11 +5,13 @@ Created on Sat Dec 15 20:39:16 2018
 
 @author: xinwenni
 """
+
 # please install the module:
-!pip install gensim
-!pip install pandas
-!pip install nltk
-!pip install matplotlib
+#!pip install gensim
+#!pip install pandas
+#!pip install nltk
+#!pip install matplotlib
+
 
 
 import os
@@ -31,7 +33,8 @@ from gensim.corpora import Dictionary, bleicorpus
 from gensim.models import ldaseqmodel
 import matplotlib.pyplot as plt
 
-
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/DTM") 
 
 def BasicCleanText(raw_text):
     cleantextprep = str(raw_text)
@@ -138,7 +141,7 @@ time_slice=total_yearly_list
 #LdaSeqModel(corpus=None, time_slice=None, id2word=None, alphas=0.01, num_topics=10, initialize='gensim', sstats=None, lda_model=None, obs_variance=0.5, chain_variance=0.005, passes=10, random_state=None, lda_inference_max_iter=25, em_min_iter=6, em_max_iter=20, chunksize=100)
 
 #use LdaSeqModel to generate DTM results
-ldaseq = LdaSeqModel(corpus=corpus_memory_friendly, id2word=dictionary, time_slice=time_slice, num_topics=4)
+ldaseq = LdaSeqModel(corpus=corpus_memory_friendly, id2word=dictionary, time_slice=time_slice, num_topics=5)
 # for given time, the distriibution of each topic 
 ldaseq.print_topics(time=1)
 # for given topic the word distribution over time
@@ -168,19 +171,6 @@ topic2_words_time=topic_time(DTM_topic_1,time_stamps)
 topic3_words_time=topic_time(DTM_topic_2,time_stamps)
 topic4_words_time=topic_time(DTM_topic_3,time_stamps)
 topic5_words_time=topic_time(DTM_topic_4,time_stamps)
-
-
-##plot the dynamic movement of topic 1
-#topic1_words=list(topic1_words_time['words'])
-#plt.figure()
-#for i in range(0,5):
-#    plt.plot(time_stamps, topic1_words_time.ix[i,1:],marker=".",label=topic1_words[i])
-##plt.xlim((-1, 2))
-##plt.ylim((0, 0.02))
-#plt.legend(loc='best')
-#plt.title('Topic 1')
-#plt.savefig('Topic1.png',transparent=True)
-#plt.show()
 
 #plot the dynamic movement of topic 1
 topic1_words=list(topic1_words_time['words'])
