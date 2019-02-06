@@ -5,6 +5,12 @@ Created on Sat Dec 15 20:39:16 2018
 
 @author: xinwenni
 """
+# please install the module:
+!pip install gensim
+!pip install pandas
+!pip install nltk
+!pip install matplotlib
+
 
 import os
 import re
@@ -12,7 +18,6 @@ import pandas as pd
 ## `nltk.download('punkt')
 import numpy as np
 from nltk.corpus import stopwords
-from os import path
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem.porter import PorterStemmer
 import nltk
@@ -23,7 +28,6 @@ from gensim.test.utils import common_corpus
 from gensim.models import LdaSeqModel
 from gensim.matutils import hellinger
 from gensim.corpora import Dictionary, bleicorpus
-import numpy
 from gensim.models import ldaseqmodel
 import matplotlib.pyplot as plt
 
