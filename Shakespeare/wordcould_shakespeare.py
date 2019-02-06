@@ -5,8 +5,9 @@ Created on Sun May  6 18:25:01 2018
 
 @author: verani
 """
-!pip install wordcloud
-!pip install Pillow
+#please install the module before you run the code 
+#!pip install wordcloud
+#!pip install Pillow
 
 from os import path
 import os
@@ -15,6 +16,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 root_path = os.getcwd()
 
 # Read the whole text.
