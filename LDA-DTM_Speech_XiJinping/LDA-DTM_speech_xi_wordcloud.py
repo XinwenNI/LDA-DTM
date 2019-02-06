@@ -35,5 +35,5 @@ wc.to_file(path.join(d, "wordcloud_19da.png"))
 
 # to show the picture 
 plt.imshow(wc, interpolation='bilinear')
-plt.axis("off")# 关掉图像的坐标
+plt.axis("off")# 
 plt.show()
