@@ -1,6 +1,8 @@
 # coding:utf-8
-!pip install wordcloud
-!pip install jieba
+# please in stall the following module if you haven't yet.
+
+#!pip install wordcloud
+#!pip install jieba
 
 from os import path
 from PIL import Image
@@ -24,21 +26,21 @@ def generate_wordcloud(text):
     font_path=path.join(d,"font//msyh.ttf")
     stopwords = set(STOPWORDS)
     wc = WordCloud(
-           max_words=2000, # 词云显示的最大词数  
-           mask=mask,# 设置背景图片       
-           stopwords=stopwords, # 设置停用词
-           font_path=font_path, # 兼容中文字体，不然中文会显示乱码
+           max_words=2000, #  
+           mask=mask,# background       
+           stopwords=stopwords, # set the stop words 
+           font_path=font_path, # 
            mode='RGBA',
-           background_color= None,# 设置背景颜色
+           background_color= None,# 
                   )
 
-    # 生成词云 
+    # wordcloud
     wc.generate(text)
 
-    # 生成的词云图像保存到本地
+    # save to local
     wc.to_file(path.join(d, "Images//wordcloud_19da.png"))
 
-    # 显示图像
+    # show the pic
     plt.imshow(wc, interpolation='bilinear')
     # interpolation='bilinear' 表示插值方法为双线性插值
     plt.axis("off")# 关掉图像的坐标
@@ -49,12 +51,12 @@ def generate_wordcloud(text):
 
 
 
-    # 读取文件
+    # read the file 
 d = os.getcwd()
-text = open(path.join(d, 'doc//十九大报告全文.txt')).read()
+text = open(path.join(d, 'doc//十九大报告全文.txt'),encoding = 'UTF8').read()
 
-# 若是中文文本，则先进行分词操作
+# for Chinese 
 text=chnSegment.word_segment(text)
     
-    # 生成词云
+    # 
 plotWordcloud.generate_wordcloud(text)
