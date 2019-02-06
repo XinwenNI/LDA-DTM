@@ -1,5 +1,5 @@
 # coding:utf-8
-# please in stall the following module if you haven't yet.
+# please install the following module if you haven't yet.
 
 #!pip install wordcloud
 #!pip install jieba

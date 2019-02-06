@@ -5,6 +5,14 @@ Created on Tue May  8 09:34:47 2018
 
 @author: verani
 """
+#please install the modules before you run this code:
+#!pip install nltk
+#!pip install numpy
+#!pip install matplotlib
+#!pip install Pillow
+
+# please download the data from 
+# https://drive.google.com/open?id=1YU6WgUffJj73q23tMB1ipUUzTzXSI6RJ
 
 import os
 import json
@@ -18,14 +26,12 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud, STOPWORDS
 import numpy as np
 from os import path
-
 import matplotlib.pyplot as plt
-
 import nltk
-
 from PIL import Image
 
-
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/nasdaq") 
 root_path= os.getcwd()
 
 with open(root_path + '/NASDAQ_News_2016.json', 'r') as json_file:
@@ -44,20 +50,6 @@ for i in range(n):
 string= ""
 allT=string.join(All)
 
-
-
-#subsample=nasdaq_news_2016[0:10]
-#n_sample=len(subsample)
-#sample1=''.split()
-#for i in range(2):
-#    temp1=subsammple[i]
-#    temp2=temp1['article_content']
-#    sample1.append(temp2)
-#
-#string= ""
-#sampleTXT=string.join(sample1)
-
-
 expression = "[^a-zA-Z0-9 ]" # keep only letters, numbers and whitespace
 cleantextCAP = re.sub(expression, ' ', allT) # apply regex
 cleantext = cleantextCAP.lower() # lower case 
@@ -66,11 +58,6 @@ cleantext = cleantextCAP.lower() # lower case
 text_file = open("Output_content.txt", "w")
 text_file.write(str(cleantext))
 text_file.close()
-
-
-#wordcloud 
-# Read the whole text.
-
 
 with open(path.join(root_path, 'Output_content.txt'), 'r', encoding='utf-8', errors='ignore') as outout_file:
     text = outout_file.readlines()
@@ -93,6 +80,10 @@ wc.generate(text[0])
 # store to file
 wc.to_file(path.join(root_path, "wordcloud_nasdaq_content.png"))
 
+# to show the picture 
+plt.imshow(wc, interpolation='bilinear')
+plt.axis("off")# 关掉图像的坐标
+plt.show()
 
 
 
