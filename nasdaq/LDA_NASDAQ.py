@@ -31,7 +31,8 @@ import nltk
 from PIL import Image
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/nasdaq") 
+#os.chdir("/Users/xinwenni/LDA-DTM/nasdaq") 
+
 root_path= os.getcwd()
 
 with open(root_path + '/NASDAQ_News_2016.json', 'r') as json_file:
@@ -98,7 +99,7 @@ for word in words:
 keys = list(dict1)
 import nltk
 nltk.download('stopwords')
-filtered_words = [word for word in keys if word not in stopwords.words('english')]
+filtered_words = [word for word in keys if word not in stopwords]
 dict2 = dict((k, dict1[k]) for k in filtered_words if k in filtered_words)
 
 with open('dict_2016.json', 'w') as f:

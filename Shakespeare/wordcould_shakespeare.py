@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
+#os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 root_path = os.getcwd()
 
 # Read the whole text.

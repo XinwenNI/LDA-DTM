@@ -29,7 +29,7 @@ from wordcloud import WordCloud, STOPWORDS
 import numpy as np
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
+#os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
 d = os.getcwd()
 
 raw_text= open(path.join(d, 'XMAS SONG.txt'), encoding = "utf8").read()
@@ -108,7 +108,8 @@ import pandas as pd
 import numpy as np
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
+#os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
+
 d = os.getcwd()
 
 text_pre = open(path.join(d, 'XMAS SONG.txt'), encoding = "utf8").read()

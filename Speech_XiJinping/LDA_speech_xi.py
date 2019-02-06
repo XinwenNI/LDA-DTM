@@ -14,7 +14,7 @@ import chnSegment
 import plotWordcloud
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/Speech_XiJinping") 
+#os.chdir("/Users/xinwenni/LDA-DTM/Speech_XiJinping") 
 
 def generate_wordcloud(text):
     '''

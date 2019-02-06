@@ -19,7 +19,8 @@ import nltk
 nltk.download('stopwords')
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
+#os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
+
 d = os.getcwd()
 
 text_file = open(path.join(d, 'three_tragedy.txt'), encoding = "utf8").read()

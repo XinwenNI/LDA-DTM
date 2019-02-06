@@ -34,7 +34,7 @@ from gensim.models import ldaseqmodel
 import matplotlib.pyplot as plt
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/DTM") 
+# os.chdir("/Users/xinwenni/LDA-DTM/DTM") 
 
 def BasicCleanText(raw_text):
     cleantextprep = str(raw_text)
