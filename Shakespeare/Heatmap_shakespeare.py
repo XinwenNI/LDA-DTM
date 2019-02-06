@@ -19,7 +19,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem.porter import PorterStemmer
 
 # Please change the working directory to your path!
-os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
+#os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 
 def BasicCleanText(raw_text):
     cleantextprep = str(raw_text)
