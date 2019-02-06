@@ -12,6 +12,10 @@ from wordcloud import WordCloud, STOPWORDS
 import os
 import chnSegment
 
+
+# Please change the working directory to your path!
+#os.chdir("/Users/xinwenni/LDA-DTM/LDA-DTM_Speech_Xijiping") 
+
 # read the file 
 d = os.getcwd()
 text = open(path.join(d, 'doc//十九大报告全文.txt'),encoding = 'UTF8').read()
