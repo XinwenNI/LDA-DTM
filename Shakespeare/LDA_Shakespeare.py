@@ -6,11 +6,10 @@ Created on Wed Oct 24 22:15:37 2018
 @author: verani
 """
 
-#please install the module:
-!pip install matplotlib
-!pip install nltk
-!pip install gensim
-
+#please install the modules before you run this code:
+#!pip install matplotlib
+#!pip install nltk
+#!pip install gensim
 
 import os
 import re
@@ -25,6 +24,8 @@ import nltk
 import gensim
 from gensim import corpora
 
+
+os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 d = os.getcwd()
 
 

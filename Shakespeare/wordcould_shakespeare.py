@@ -5,7 +5,7 @@ Created on Sun May  6 18:25:01 2018
 
 @author: verani
 """
-#please install the module before you run the code 
+#please install these modules before you run the code 
 #!pip install wordcloud
 #!pip install Pillow
 

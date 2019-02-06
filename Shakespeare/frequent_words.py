@@ -6,9 +6,9 @@ Created on Wed Oct 24 21:15:06 2018
 @author: verani
 """
 
-# please install the module: 
-!pip install matplotlib
-!pip install nltk
+# please install these modules before run this code : 
+#!pip install matplotlib
+#!pip install nltk
 
 import matplotlib.pyplot as plt
 import re
@@ -18,6 +18,7 @@ from os import path
 import nltk
 nltk.download('stopwords')
 
+os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 d = os.getcwd()
 
 text_file = open(path.join(d, 'three_tragedy.txt'), encoding = "utf8").read()

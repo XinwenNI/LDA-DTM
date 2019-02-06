@@ -6,7 +6,7 @@ Created on Sat Dec 15 20:39:16 2018
 @author: xinwenni
 """
 
-# please install the module:
+# please install these modules before you run the code:
 #!pip install gensim
 #!pip install pandas
 #!pip install nltk

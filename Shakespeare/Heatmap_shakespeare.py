@@ -5,10 +5,10 @@ Created on Thu Oct 25 09:08:48 2018
 The heatmap of Shakespeare analysis is missing from the Quantlet. This code is try to generate that. 
 @author: verani
 """
-#please install the module:
-!pip install matplotlib
-!pip install nltk
-!pip install pandas
+#please install these module before you run the code :
+#!pip install matplotlib
+#!pip install nltk
+#!pip install pandas
 
 import re
 from nltk.corpus import stopwords
@@ -18,6 +18,7 @@ import pandas as pd
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem.porter import PorterStemmer
 
+os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 
 def BasicCleanText(raw_text):
     cleantextprep = str(raw_text)
