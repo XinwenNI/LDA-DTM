@@ -1,0 +1,13 @@
+
+Name of Quantlet: "LDA-DTM_dirichlet_simulation"
+Published in: LDA-DTM
+
+Description: "Simulated article using different Dirichlet hyperparameters to show the mechanism of LDA" 
+
+Keywords: LDA, Dirichlet, Simulated Articles, Hyperparameters, Word distribution 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+

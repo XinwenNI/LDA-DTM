@@ -1,0 +1,14 @@
+
+Name of Quantlet: LDA-DTM_speech_xi_wordcloud  
+
+Published in: LDA-DTM
+
+Description: "word cloud of the president of the People's Republic of China Xi Jinping's speech in 19th National Congress of the Communist Party of China" 
+
+Keywords: LDA, word cloud, Xi Jinping, China, 19 Da
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+

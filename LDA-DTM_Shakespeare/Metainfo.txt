@@ -1,0 +1,14 @@
+
+Name of Quantlet: LDA-DTM_Shakespeare_LDA   
+
+Published in: LDA-DTM
+
+Description: "Analyse the word frequency and the topic distribution of Shakespeare's works: Hamlet, Julius Caesar and Romeo and Juliet"  
+
+Keywords: LDA, Shakespeare, topic modelling, word frequency, word cloud 
+
+Author: Xinwen Ni
+
+Submitted:  01 OCT 2018
+
+
