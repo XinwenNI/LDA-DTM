@@ -1,5 +1,5 @@
 
-Name of Quantlet: LDA_Shakespeare   
+Name of Quantlet: LDA-DTM_Shakespeare_LDA   
 
 Published in: LDA-DTM
 

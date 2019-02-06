@@ -1,5 +1,5 @@
 
-Name of Quantlet: LDA_NASDAQ   
+Name of Quantlet: LDA-DTM_NASDAQ   
 
 Published in: LDA-DTM
 

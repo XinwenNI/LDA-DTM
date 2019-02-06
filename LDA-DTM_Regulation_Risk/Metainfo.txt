@@ -1,5 +1,5 @@
 
-Name of Quantlet: DTM_Policy_Risk 
+Name of Quantlet: LDA-DTM_Policy_Risk_DTM 
 
 Published in: LDA-DTM
 

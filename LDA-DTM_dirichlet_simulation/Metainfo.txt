@@ -1,6 +1,5 @@
 
-Name of Quantlet: LDA_generate_document_by_setting_hyperparameters
-
+Name of Quantlet: "LDA-DTM_dirichlet_simulation"
 Published in: LDA-DTM
 
 Description: "Simulated article using different Dirichlet hyperparameters to show the mechanism of LDA" 
