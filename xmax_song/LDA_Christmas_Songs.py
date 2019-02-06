@@ -5,14 +5,18 @@ Created on Sun May  6 19:10:18 2018
 
 @author: verani
 """
+#Please install these modules before you run the code 
+#!pip install wordcloud
+#!pip install nltk
+#!pip install Pillow
+#!pip install numpy
+
+#!pip install gensim
+#!pip install pandas
+
 ############################################################# 
 # Part I: wordcloud 
 ############################################################# 
-#install the module: wordcloud, nltk, PIL, numpy
-!pip install wordcloud
-!pip install nltk
-!pip install Pillow
-!pip install numpy
 
 
 import matplotlib.pyplot as plt
@@ -24,6 +28,8 @@ from PIL import Image
 from wordcloud import WordCloud, STOPWORDS
 import numpy as np
 
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
 d = os.getcwd()
 
 raw_text= open(path.join(d, 'XMAS SONG.txt'), encoding = "utf8").read()
@@ -83,8 +89,6 @@ plt.show()
 #LDA
 ############################################################# 
 
-!pip install gensim
-!pip install pandas
 
 import os
 import re
@@ -103,6 +107,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 
+# Please change the working directory to your path!
+os.chdir("/Users/xinwenni/LDA-DTM/xmas_song") 
 d = os.getcwd()
 
 text_pre = open(path.join(d, 'XMAS SONG.txt'), encoding = "utf8").read()
