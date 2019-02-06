@@ -24,7 +24,7 @@ import nltk
 import gensim
 from gensim import corpora
 
-
+# Please change the working directory to your path!
 os.chdir("/Users/xinwenni/LDA-DTM/Shakespeare") 
 d = os.getcwd()
 
