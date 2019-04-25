@@ -14,6 +14,7 @@ Created on Sat Dec 15 20:39:16 2018
 
 
 
+
 import os
 import re
 import pandas as pd
@@ -141,7 +142,8 @@ time_slice=total_yearly_list
 #LdaSeqModel(corpus=None, time_slice=None, id2word=None, alphas=0.01, num_topics=10, initialize='gensim', sstats=None, lda_model=None, obs_variance=0.5, chain_variance=0.005, passes=10, random_state=None, lda_inference_max_iter=25, em_min_iter=6, em_max_iter=20, chunksize=100)
 
 #use LdaSeqModel to generate DTM results
-ldaseq = LdaSeqModel(corpus=corpus_memory_friendly, id2word=dictionary, time_slice=time_slice, num_topics=5)
+#ldaseq = LdaSeqModel(corpus=corpus_memory_friendly, id2word=dictionary, time_slice=time_slice, num_topics=5)
+ldaseq = LdaSeqModel(corpus=corpus_memory_friendly, id2word=dictionary, time_slice=time_slice, num_topics=4)
 # for given time, the distriibution of each topic 
 ldaseq.print_topics(time=1)
 # for given topic the word distribution over time

@@ -7,6 +7,8 @@ Description: "Analysis the word evolution of Cryptocurrency regulation news duri
 
 Keywords: LDA, DTM, Topic Models, Cryptocurrency, regulation risk
 
+See also: LDA-DTM_NASDAQ, LDA-DTM_Shakespeare, LDA-DTM_Speech_Xijinping
+
 Author: Xinwen Ni
 
 Submitted:  01 Jan 2019

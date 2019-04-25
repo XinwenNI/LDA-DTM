@@ -6,6 +6,8 @@ Description: "Simulated article using different Dirichlet hyperparameters to sho
 
 Keywords: LDA, Dirichlet, Simulated Articles, Hyperparameters, Word distribution 
 
+See also: LDA-DTM_NASDAQ, LDA-DTM_Shakespeare, LDA-DTM_Speech_Xijinping
+
 Author: Xinwen Ni
 
 Submitted:  01 OCT 2018

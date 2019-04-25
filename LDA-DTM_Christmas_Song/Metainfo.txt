@@ -7,6 +7,8 @@ Description: Compare two Christmas Songs with their frequency words and their to
 
 Keywords: LDA, word cloud, topic modelling, Christmas Song, word frequency
 
+See also: LDA-DTM_NASDAQ, LDA-DTM_Shakespeare, LDA-DTM_Speech_Xijinping
+
 Author: Xinwen Ni
 
 Submitted:  01 OCT 2018
