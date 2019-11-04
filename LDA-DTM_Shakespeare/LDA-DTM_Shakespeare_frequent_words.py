@@ -107,8 +107,15 @@ for word in words_34:
 
 
 # Plot most frequent words
+#n = range(len(dictshow))
+#plt.bar(n, dictshow.values(), align='center')
+#plt.xticks(n, dictshow.keys())
+#plt.title("Most frequent Words")
+#plt.savefig("FrequentWords.png", transparent=True)
+    
 n = range(len(dictshow))
+plt.figure(figsize=(20,10))
 plt.bar(n, dictshow.values(), align='center')
-plt.xticks(n, dictshow.keys())
+plt.xticks(n, dictshow.keys(), rotation = 'vertical')
 plt.title("Most frequent Words")
 plt.savefig("FrequentWords.png", transparent=True)
