@@ -17,17 +17,10 @@ Author: Xinwen Ni
 
 Submitted:  01 OCT 2018
 
+Notes: Please download NASDAQ data from https://drive.google.com/file/d/1eAw4_3y1VhBuiYZdxkqbc8dF89yhf-uM/view?usp=sharing 
+
 ```
 
-![Picture1](FrequentWords.png)
-
-![Picture2](WallStr.png)
-
-![Picture3](bull+bear.png)
-
-![Picture4](nasdaq_bull.png)
-
-![Picture5](wordcloud_nasdaq_bull+bear.png)
 
 ![Picture6](wordcloud_nasdaq_content.png)
 
