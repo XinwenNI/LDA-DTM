@@ -17,6 +17,8 @@ Author: Xinwen Ni
 
 Submitted:  01 OCT 2018
 
+Notes: Please download NASDAQ data from https://drive.google.com/file/d/1eAw4_3y1VhBuiYZdxkqbc8dF89yhf-uM/view?usp=sharing 
+
 ```
 
 ![Picture1](FrequentWords.png)
