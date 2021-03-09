@@ -1,17 +1,19 @@
 [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **LDA_speech_xi** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **LDA-DTM_speech_xi_wordcloud** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
 
-Name of Quantlet: LDA_speech_xi  
+Name of Quantlet: LDA-DTM_speech_xi_wordcloud  
 
 Published in: LDA-DTM
 
-Description:  "word cloud of Xi Jinping's speech"
+Description: "word cloud of the president of the People's Republic of China Xi Jinping's speech in 19th National Congress of the Communist Party of China" 
 
-Keywords: LDA, word cloud, Xi Jinping, China 
+Keywords: LDA, word cloud, Xi Jinping, China, 19 Da
+
+See also: LDA-DTM_NASDAQ, LDA-DTM_Shakespeare, LDA-DTM_Regulation_Risk
 
 Author: Xinwen Ni
 
@@ -21,49 +23,57 @@ Submitted:  01 OCT 2018
 
 ```
 
+![Picture1](danghui.png)
+
+![Picture2](wordcloud_19da.png)
+
 ### PYTHON Code
 ```python
 
 # coding:utf-8
+# please install the following module if you haven't yet.
+
+#!pip install wordcloud
+#!pip install jieba
 
 from os import path
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud, STOPWORDS
+import os
+import chnSegment
 
-def generate_wordcloud(text):
-    '''
-    输入文本生成词云,如果是中文文本需要先进行分词处理
-    '''
-    # 设置显示方式
-    d=path.dirname(__file__)
-    mask = np.array(Image.open(path.join(d, "Images//Danghui.png")))
-#    mask = np.array(Image.open(path.join(d, "Images//william-shakespeare-black-silhouette.jpg")))
-    font_path=path.join(d,"font//msyh.ttf")
-    stopwords = set(STOPWORDS)
-    wc = WordCloud(
-           max_words=2000, # 词云显示的最大词数  
-           mask=mask,# 设置背景图片       
-           stopwords=stopwords, # 设置停用词
-           font_path=font_path, # 兼容中文字体，不然中文会显示乱码
-           mode='RGBA',
-           background_color= None,# 设置背景颜色
-                  )
 
-    # 生成词云 
-    wc.generate(text)
+# Please change the working directory to your path!
+#os.chdir("/Users/xinwenni/LDA-DTM/LDA-DTM_Speech_Xijiping") 
 
-    # 生成的词云图像保存到本地
-    wc.to_file(path.join(d, "Images//wordcloud_19da.png"))
+# read the file 
+d = os.getcwd()
+text = open(path.join(d, 'doc//十九大报告全文.txt'),encoding = 'UTF8').read()
 
-    # 显示图像
-    plt.imshow(wc, interpolation='bilinear')
-    # interpolation='bilinear' 表示插值方法为双线性插值
-    plt.axis("off")# 关掉图像的坐标
-    plt.show()
+# for Chinese 
+text=chnSegment.word_segment(text)
+    
+    # 
+#plotWordcloud.generate_wordcloud(text)
+stopwords = set(STOPWORDS)
+font_path=path.join(d,"font//msyh.ttf")
+mask = np.array(Image.open(path.join(d, "Danghui.png")))
+wc = WordCloud(max_words=1000, mask=mask,
+               stopwords=stopwords,font_path=font_path, mode='RGBA', background_color=None)
 
+# Pass Text
+wc.generate(text)
+
+# store to file
+wc.to_file(path.join(d, "wordcloud_19da.png"))
+
+# to show the picture 
+plt.imshow(wc, interpolation='bilinear')
+plt.axis("off")# 
+plt.show()
 
 ```
 
-automatically created on 2019-02-04
+automatically created on 2020-10-17
