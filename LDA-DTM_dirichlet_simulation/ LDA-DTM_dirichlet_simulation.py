@@ -40,7 +40,7 @@ index=pd.DataFrame(index, columns=['beta1','beta2','beta3'])
 # here fixed the number of words in the topic 
 
 for m in range(len(beta.T['beta1'])):
-    phi=np.random.dirichlet(beta.ix[m], n).transpose()
+    phi=np.random.dirichlet(beta.iloc[m,:], n).transpose()
     phi=pd.DataFrame(phi)
     for i in range(n):
         x=random.uniform(0, 1)
